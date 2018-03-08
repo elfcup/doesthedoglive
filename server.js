@@ -24,3 +24,26 @@ var routes = require('./routes/movie_route.js');
 app.use('/', routes);
 
 app.listen(port);
+
+
+// Nightmare testing
+
+var Nightmare = require("nightmare");
+
+var nightmare = Nightmare({ show: true });
+
+nightmare
+    .goto("http://localhost:3000/")
+    .type("#name", "test dog lives")
+    .click("#addMovieButton")
+    .wait("#links a")
+    .evaluate(function () {
+        return document.querySelector("#links a").href;
+    })
+    .end()
+    .then(function (result) {
+        console.log(result);
+    })
+    .catch(function (error) {
+        console.error("Search failed:", error);
+    }); 
