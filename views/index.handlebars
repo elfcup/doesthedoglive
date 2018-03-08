@@ -1,0 +1,106 @@
+<body>
+
+  <div class="imageRow">
+    <img src="assets/image/elfdoggles.jpg" width=190px>
+    <img src="assets/image/IMG_1999.JPG" width=190px>
+    <img src="assets/image/IMG_8611.JPG" width=196px>
+    <img src="assets/image/IMG_9164.JPG" width=190px>
+    <img src="assets/image/IMG_9394.JPG" width=190px>
+
+  </div>
+  <div id="container">  
+
+   
+    <div class="pageTitle">
+          <h1>Does the Dog Live?</h1>
+    </div>
+   
+      {{!-- <div class="container"> --}}
+        {{!-- <div class="row"> --}}
+          {{!-- <div class="col s2"></div> --}}
+          {{!-- <div class="col s8"> --}}
+            {{#each movies}}
+            <div class='movieList'>
+              <div>
+                {{this.movie_title}}
+              </div>
+            </div>
+            {{/each}}
+          {{!-- </div> --}}
+          {{!-- <div class="col s2"></div> --}}
+        {{!-- </div> --}}
+        {{!-- </div> --}}
+  <div id="borderbox">
+        <div class="pageTitle">
+          <h1>Add A Movie</h1>
+        </div>
+
+        <div class="row">
+          <div class="col s2"></div>
+          <div class="col s6">
+            <form action="/movies" method="POST">
+              <input type="text" id="name" name="movie_title">
+              <button type="submit" class="addMovieButton">Submit</button>
+           
+            {{!-- radio-button functionality below --}}
+          </div>
+          <div class="col s2">
+            {{!-- <input type="radio" id="contactChoice2" name="contact" value="phone">
+            <label for="contactChoice2">Phone</label> --}}
+
+
+              {{!-- <input type="radio" id="name" name="dog_lives" class="addMovieButton"> --}}
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="dog_lives" id="inlineRadio1" value="1">
+                <label class="form-check-label" for="inlineRadio1">Dog Lives!</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="dog_lives" id="inlineRadio2" value="0">
+                <label class="form-check-label" for="inlineRadio2">Dog Dies!</label>
+              </div>
+
+          </div>
+          </form>
+          <div class="col s2"></div>
+
+        </div>
+        </div>
+      
+    
+
+    <div class="row">
+      <div class="col s6">
+        <div>
+          <h3>The dog LIVES!!</h3>
+        </div>
+        {{#each movies}} {{#if this.dog_lives}}
+        <div class="movieList">
+          {{this.movie_title}} {{!--
+          <form action="/movies/{{this.id}}?_method=PUT" method="POST">
+            <button type="submit" class='burgerAvailable'> {{this.movie_title}}</button>
+          </form> --}}
+        </div>
+        {{/if}} {{/each}}
+      </div>
+
+      <div class="col s6">
+        <div>
+          <h3>The dog DIES!!</h3>
+        </div>
+        {{#each movies}} {{#unless this.dog_lives}}
+        <div class='movieList'>
+          <div>
+            {{this.movie_title}}
+          </div>
+        </div>
+        {{/unless}} {{/each}}
+      </div>
+    </div>
+  </div>
+  {{!-- </div>
+  </div> --}}
+  <br>
+  <footer>Created and maintained by Earl Clarin and Dani Coles 2018</footer>
+
+  </div>
+</body>

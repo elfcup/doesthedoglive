@@ -1,0 +1,91 @@
+
+
+#borderbox {
+	border: thick black;
+}
+
+ body {
+ 	width: 75%;
+	margin: 0 auto; 
+
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	font-family: 'Courier New', cursive;
+ 	font-size: 65px;
+ 	margin: 50px;
+ }
+
+ h3 {
+	 text-align: center;
+ }
+
+ .burgerAvailable {
+ 	font-family: 'Courie New', cursive;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 25px;
+ 	width: 100%;
+ 	margin: 10px;
+ 	padding: 10px;
+ 	background-color: #b7ffc2;
+ 	border: none;
+ }
+
+ .burgerAvailable:hover {
+ 	background-color: #81ff94;
+ }
+
+ .movieList {
+ 	font-family: 'Courier New', cursive;
+ 	font-weight: normal;
+ 	font-size: 20px;
+	 text-align: center;
+	 width: 100%;
+
+ 	border-radius: 15px;
+ 	margin: 5px;
+ 	padding: 5px;
+ 	background-color: #ffd1c9;
+ }
+
+ .pageTitle {
+ 	font-family: 'Courier New', cursive;
+ 	font-weight: normal;
+ 	font-size: 20px;
+	 text-align: center;
+	 width: 100%;
+
+ 	border-radius: 15px;
+ 	/* margin: 5px;
+ 	padding: 5px; */
+ 	background-color: #35f0f7;
+ }
+
+ h2 {
+  	text-align: center;
+ 	font-family: 'Courier New', cursive;
+ 	font-size: 40px;
+ 	margin: 50px;
+ }
+
+/* .addMovierButton:active {
+	background-color: #FFC04C;
+}
+
+.burgerFooter {
+	background-color: #FFC04C;
+	padding: 20px 0;
+} */
+footer {
+	text-align: center;
+	font-size: 12px;
+	color: darkblue;
+	
+}
