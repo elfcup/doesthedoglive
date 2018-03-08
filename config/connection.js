@@ -4,7 +4,7 @@ var connection;
 
 connection = mysql.createPool({
 	connectionLimit: 10,	
-	port: 3306,
+	// port: 3306,
 	host: 'l9dwvv6j64hlhpul.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
 	user: 'da0kbir6uftng6tn',
 	password: 'dm8lemkutbrzhia0',
