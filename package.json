@@ -1,24 +1,25 @@
 {
-  "name": "eat-da-burger-master",
+  "name": "doesthedoglive",
   "version": "1.0.0",
-  "description": "burger eating",
+  "description": "dog movie app",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.10",
-    "mysql": "^2.15.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elfcup/doesthedoglive.git"
+  },
   "keywords": [
-    "burger",
-    "eating"
+    "dog"
   ],
-  "author": "Earl Clarin",
-  "license": "ISC"
+  "author": "Dani Coles and Earl Clarin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elfcup/doesthedoglive/issues"
+  },
+  "homepage": "https://github.com/elfcup/doesthedoglive#readme"
 }
