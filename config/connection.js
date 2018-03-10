@@ -11,6 +11,7 @@ var mysql = require('mysql');
 // 	database: 'dogmovies_db'
 // 	});
 
+
 var connection = mysql.createConnection({
 	// connectionLimit: 10,	
 	port: 3306,
